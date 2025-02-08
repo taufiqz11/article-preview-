@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(210, 21%, 89%);
+  font-family: "Manrope", serif !important;
+}
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: 700px;
+  min-height: 200px;
+  background-color: hsl(210, 46%, 95%);
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  
+}
+.card-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+.break {
+  display: block; /* Acts like <br> on larger screens */
+}
+
+.card-content img {
+  width: 290px;
+  height: 270px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 430px;
+  flex-shrink: 1;
+  margin-right: 30px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.card-content h1 {
+  font-weight: 700;
+  font-size: 19px;
+  color: hsl(217, 19%, 35%);
+  margin: 10px;
+}
+.card-content p {
+  font-weight: 500;
+  font-size: 13px;
+  color: hsl(214, 17%, 51%);
+  margin: 10px;
+  margin-bottom: -10px;
+}
+.card-content h6 {
+  font-weight: 700;
+  font-size: 9px;
+  margin-left: 10px;
+  margin-top: 30px;
+  color: hsl(217, 19%, 35%);
+}
+.text-content img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  margin-bottom: -17px;
+  margin-right: 10px;
+}
+.jun {
+  font-weight: 500;
+  margin-left: 40px;
+  margin-top: -0px;
+  color: hsl(214, 17%, 51%);;
+}
+.text-content button {
+  margin-left: 80%;
+}
+.card-img {
+  display: flex;
+}
+.text-content button{
+  border-radius: 50px;
+  background-color:hsl(210, 46%, 95%) ;
+  width: 20.5px;
+  height: 20px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 23px;
+  left: 10px;
+}
+.text-content button img {
+  width: 10px; 
+  height: 10px;
+  margin-left: 10px;
+  margin-top: 4px;
+}
+.share-bar{
+  background-color: hsl(217, 19%, 35%) ;
+  border-radius: 10px;
+  width: 150px;
+  height: 30px;
+  position: absolute;
+  bottom:25%;
+  left: 63%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  
+  
+ 
+}
+.share-bar-content{
+  display: flex;
+
+}
+.share-bar-content p{
+  padding-top: px;
+}
+ #barp{
+  color: hsl(210, 46%, 95%);
+  margin: 0px 0px 0px;
+  font-weight: 100;
+  font-size: 8px;
+  margin-right: 5px;
+  padding-top: 7px;
+  word-spacing: 3px;
+  
+  
+}
+.share-bar img{
+  width: 15px;
+  height: 15px;
+  margin-bottom: 1px;
+  margin: 5px;
+  margin-left: 3px;
+  border-radius: 0%;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 320px;
+    height: 576px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .share-bar{
+  background-color: hsl(217, 19%, 35%) ;
+  border-radius: 0px 0px 10px 10px ;
+  width: 110.5%; /* Make it full width */
+    min-width: unset; /* Remove fixed width */
+    min-height: 67px;
+    position: absolute;
+    bottom: 68px; /* Adjust the bottom position */
+    left: 49.8%;
+    transform: translateX(-45%); /* Center it properly */
+    display: flex;
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+
+  }
+  .share-bar-content{
+    display: flex;
+    padding-left: 40px;
+  }
+  .share-bar-content img{
+    width: 20px;
+    height: 20px;
+    padding-left: 15px;
+  }
+  .share-bar-content p{
+    padding-top: 0px;
+  }
+  #barp{
+    font-size: 13px;
+    padding-top: 6px;
+    word-spacing: 3px;
+    color: hsl(210, 46%, 95%);
+  }
+  
+  
+  #card-content-img{
+    width: 320px; /* Make image take full width */
+    height: 230px; /* Make image take full height of its container */
+    object-fit: cover; /* Ensure it covers the entire area */
+    border-radius: 10px 10px 0 0px; /* Keep only left-side rounded corners */
+  }
+
+  .card-content {
+    flex-direction: column;
+    
+    padding: 0px;
+  }
+
+  .text-content {
+    padding: 15px;
+  }
+ 
+  .text-content p{
+    margin-bottom: 3px;
+  }
+  
+  .break {
+    display: inline; /* Removes the line break on small screens */
+    
+  }
+
+  .text-content button {
+    width: 35px;
+    height: 35px;
+    position: relative;
+    right: auto;
+    left: 135px;
+    bottom: 59.5px;
+    margin: 10px auto;
+    z-index: 2;
+  }
+  .text-content button img {
+    width: 20px; 
+    height: 20px;
+    margin-left: 10px;
+    margin-top: 6px;
+  }
+ 
+}
